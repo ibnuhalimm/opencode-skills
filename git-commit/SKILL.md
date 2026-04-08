@@ -1,13 +1,15 @@
 ---
 name: git-commit
-description: Generate or write clear, concise, and developer-friendly commit message
+description: Write commit message of staged files in current working directory
 ---
 
 ## Tools
+- Current working directory: !`pwd`
 - Current git diff (staged): !`git diff --cached`
 - Current branch: !`git branch --show-current`
 
-## Git Commit Mode Instructions
+## What I do
+
 1. **Gather context** :
    - Analyze the staged changes in current working directory.
    - Get the task number based on current branch name after "/" character <task-number>
@@ -27,3 +29,8 @@ description: Generate or write clear, concise, and developer-friendly commit mes
    - Format as plain text without any markdown format character
    - DON'T ADD YOUR SIGNATURE at the end of the commit message.
    - DON'T EXECUTE git commit message command
+
+## When to use me
+
+Ask clarifying questions if there's no staged files for commit or the code changes are massive.
+

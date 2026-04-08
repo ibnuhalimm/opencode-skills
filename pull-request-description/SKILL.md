@@ -1,15 +1,16 @@
 ---
 name: pull-request-description
-description: Generate or write developer-friendly pull request title and description
+description: Write pull request description and suggest a few pull request titles.
 ---
 
 ## Tools
+- Current working directory: !`pwd`
 - Current branch name: !`git branch --show-current`
 - List committed message: !`git log`
 
 ## Pull Requests Description Generator Mode
 1. **Gather Context**
-   - List the committed messages history of current working branch
+   - List the committed messages history of CURRENT WORKING BRANCH ONLY.
    - Analyze and summarize the context based on the commit history
 
 2. **Write the Description**
@@ -25,3 +26,4 @@ description: Generate or write developer-friendly pull request title and descrip
 
 4. **PR Titles**
    - Suggest few pull request title according to the context and summarizing sentence you've got.
+   - Output format as title case
